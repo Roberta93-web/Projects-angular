@@ -1,0 +1,30 @@
+<div class="sect-container">
+  <h1 class="title">Why others choose us?</h1>
+  <div class="solution">
+    <div
+      class="cards"
+      *ngFor="let recension of recensions"
+      (click)="clickName(recension)"
+    >
+      <img
+        width="64"
+        height="64"
+        src="https://img.icons8.com/sf-black-filled/64/3f2182/quote-left.png"
+        alt="quote-left"
+      />
+      <h2>{{ recension.title }}</h2>
+      <p>{{ recension.text }}</p>
+      <p>{{ recension.stars }}</p>
+      <div class="recension">
+        <img [src]="recension.img" alt="foto" width="70" height="70" />
+        <p>
+          <b> {{ recension.name }}</b>
+          <br />
+          {{ recension.description }}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<router-outlet></router-outlet>

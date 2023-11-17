@@ -1,0 +1,27 @@
+<div class="sect-container">
+  <div class="solution">
+    <span>#bestdeal</span>
+    <div class="cards" *ngFor="let price of precies">
+      <h1 class="title">{{ price.title }}</h1>
+      <h2>{{ price.price }}</h2>
+      <p>{{ price.text }}</p>
+      <ul>
+        <li>{{ price.list.one }}</li>
+        <li>{{ price.list.two }}</li>
+        <li>{{ price.list.three }}</li>
+        <li>{{ price.list.four }}</li>
+      </ul>
+      <button>
+        {{ price.button }}
+        <div class="btn">
+          <img
+            width="32"
+            height="32"
+            src="https://img.icons8.com/ios-filled/50/000000/circled-right-2.png"
+            alt="circled-right-2"
+          />
+        </div>
+      </button>
+    </div>
+  </div>
+</div>
