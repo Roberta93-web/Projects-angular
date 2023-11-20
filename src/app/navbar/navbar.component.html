@@ -1,14 +1,23 @@
 <div class="nav">
   <div class="container-logo">
     <img src="assets/img/logo.png" alt="logo" />
-    <h2 routerLink="">Wardiere Inc.</h2>
+    <a class="nav-brand" routerLink="">Wardiere Inc.</a>
   </div>
-  <div class="list-link">
-    <ul>
-      <li><a routerLink="solutions">Solutions</a></li>
-      <li><a routerLink="pricing">Pricing</a></li>
-      <li><a routerLink="about">About</a></li>
+  <div>
+    <ul class="nav-menu" #navMenu>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="solutions">Solutions</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="pricing">Pricing</a>
+      </li>
+      <li class="nav-item"><a class="nav-link" routerLink="about">About</a></li>
     </ul>
+    <div class="hamburger" #hamburger>
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
   </div>
   <button>
     Sign up<img

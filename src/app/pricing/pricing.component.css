@@ -41,14 +41,12 @@ span {
   z-index: 1;
 }
 
-@media screen and (min-width: 375px) and (max-width: 600px) {
+@media screen and (min-width: 375px) and (max-width: 768px) {
   .solution {
     position: relative;
   }
   span {
-    position: absolute;
-    top: 560px;
-    right: 25px;
+    opacity: 0;
   }
 }
 
