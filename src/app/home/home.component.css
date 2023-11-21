@@ -1,119 +1,13 @@
-nav {
-  background-color: #f6f4f3;
-  border-bottom: 2px solid #31241e;
-  margin: 0 10px 0 10px;
-}
-
-.container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-right: 80px;
-}
-
-.brand {
-  display: flex;
-  align-items: center;
-}
-.navbar-brand {
-  color: #31241e;
-  font-size: 23.1px;
-  text-decoration: none;
-}
-
-.menu ul {
-  display: flex;
-  gap: 50px;
-}
-
-.menu ul li {
-  list-style-type: none;
-}
-
-.menu a {
-  cursor: pointer;
-  color: #86654b;
-  font-size: 12px;
-  text-decoration: none;
-}
-
-.menu a:hover {
-  color: #31241e;
-  font-weight: bold;
-  transition: 0.3s ease-in-out;
-}
-
-@media only screen and (max-width: 999px) {
-  .menu {
-    position: fixed;
-    right: -280px;
-    top: 64px;
-    width: 280px;
-    height: 100%;
-    background: #86654b;
-    transition: 0.4s ease-in-out;
-    z-index: 1;
-  }
-
-  .menu ul {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    padding: 10px 10px 10px 25px;
-  }
-
-  .menu a {
-    color: #31241e;
-  }
-
-  .menu_icon {
-    display: inline-block;
-    position: relative;
-    right: 0;
-  }
-
-  .menu_icon span {
-    width: 30px;
-    height: 3px;
-    background-color: #31241e;
-    display: block;
-  }
-
-  .menu_icon span:nth-child(2) {
-    margin: 4px 0;
-  }
-
-  .menu_icon_Class span:nth-child(2) {
-    display: none;
-  }
-
-  .menu_icon_Class span:nth-child(1) {
-    transform: rotate(40deg);
-  }
-
-  .menu_icon_Class span:nth-child(3) {
-    transform: rotate(-40deg);
-    margin-top: -3px;
-  }
-
-  .menuClass {
-    right: 0;
-    transition: 0.4s ease-in-out;
-  }
-}
-
 .center {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 10px;
 }
 
 .container {
   position: relative;
 }
+
 .img-center {
   margin-top: 30px;
   max-width: 80vw;
@@ -131,8 +25,8 @@ nav {
 .shop {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
-  /* justify-content: space-between; */
+  align-items: center;
+  gap: 150px;
 }
 
 .paragraph {
@@ -140,21 +34,33 @@ nav {
   flex-direction: column;
   width: 400px;
   gap: 20px;
-  font-size: 11px;
+  margin: 10px;
+}
+
+.paragraph p {
+  color: #31241e;
 }
 
 button {
   background-color: #d1c8c1;
   border: none;
   color: #f6f4f3;
-  width: 150px;
-  height: 50px;
-  border-radius: 10px;
+  width: 200px;
+  height: 25px;
+  border-radius: 30px;
   font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.1);
+  background-color: #31241e;
 }
 
 .images {
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
+  align-items: center;
 }

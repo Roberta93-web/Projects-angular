@@ -1,0 +1,29 @@
+<nav class="navbar">
+  <div class="container">
+    <div class="brand">
+      <img src="assets/img/logo.png" alt="logo" width="80" height="60" />
+      <a class="navbar-brand" routerLink="">BORCELLE</a>
+    </div>
+    <div
+      class="menu_icon"
+      [class.menu_icon_Class]="menu_icon_variable"
+      (click)="openMenu()"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="menu" [class.menuClass]="menuVariable">
+      <ul>
+        <li *ngFor="let link of navbarLinks">
+          <a
+            routerLink="{{ link.url }}"
+            [ngClass]="{ active: link.active }"
+            (click)="setActive(link)"
+            ><b>{{ link.label }}</b></a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

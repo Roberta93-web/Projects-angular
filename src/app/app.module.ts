@@ -5,9 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home/home.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { AboutComponent } from './about/about.component';
+import { CoursesComponent } from './courses/courses.component';
+import { ShopComponent } from './shop/shop.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent],
+  declarations: [AppComponent, HomeComponent, NavbarComponent, AboutComponent, CoursesComponent, ShopComponent, ContactComponent],
   imports: [BrowserModule, AppRoutingModule, CommonModule],
   providers: [],
   bootstrap: [AppComponent],

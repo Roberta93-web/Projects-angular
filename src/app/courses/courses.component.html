@@ -1,0 +1,17 @@
+<div class="container">
+  <div
+    class="cont"
+    *ngFor="let cont of containers; let odd = odd"
+    [ngClass]="{ reversed: odd }"
+  >
+    <img [src]="cont.image" alt="" />
+    <div class="title">
+      <h1>{{ cont.title }}</h1>
+      <h2>{{ cont.description }}</h2>
+      <p class="text">{{ cont.text }}</p>
+      <div class="btn">
+        <button>READ MORE</button>
+      </div>
+    </div>
+  </div>
+</div>
