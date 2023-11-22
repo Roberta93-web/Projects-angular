@@ -1,1 +1,26 @@
-<p>shop works!</p>
+<div class="shop">
+  <div class="header">
+    <h1><i>ONLINE SHOP</i></h1>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut <br />
+      labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+      exercitation ullamco <br />
+      laboris nisi ut aliquip ex ea commodo consequat.
+    </p>
+  </div>
+  <div class="container-prod">
+    <div class="button-arrow">
+      <p><i class="arrow left"></i></p>
+    </div>
+    <div class="products" *ngFor="let prod of products">
+      <img [src]="prod.image" alt="" />
+      <h2>{{ prod.description }}</h2>
+      <p>{{ prod.price }}</p>
+      <button>{{ prod.button }}</button>
+    </div>
+    <div class="button-arrow">
+      <p><i class="arrow right"></i></p>
+    </div>
+  </div>
+</div>

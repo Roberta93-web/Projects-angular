@@ -1,0 +1,99 @@
+.contact {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 100px auto;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.left h1 {
+  color: #31241e;
+  font-size: 33px;
+  font-weight: bold;
+}
+
+.left h3 {
+  color: #31241e;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.text {
+  color: #31241e;
+  font-size: 12px;
+  margin: 40px 0 40px 0;
+}
+
+.left h4 {
+  color: #31241e;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.email {
+  color: #31241e;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+input {
+  background-color: #d1c8c1;
+  width: 250px;
+  height: 30px;
+  padding: 5px;
+  border: none;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+textarea {
+  background-color: #d1c8c1;
+  width: 250px;
+  padding: 5px;
+  border: none;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+input[placeholder],
+textarea[placeholder] {
+  font-weight: bold;
+  color: #31241e;
+  font-size: 10px;
+}
+
+.btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+button {
+  background-color: #d1c8c1;
+  border: none;
+  color: #f6f4f3;
+  width: 150px;
+  height: 25px;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.1);
+  background-color: #31241e;
+}
