@@ -64,3 +64,34 @@ button:hover {
   flex-wrap: wrap;
   align-items: center;
 }
+
+@media screen and (max-width: 768px) {
+  .container h1 {
+    left: 16px;
+    top: 111px;
+  }
+
+  .img-center {
+    max-width: 50vw;
+    height: 200px;
+  }
+
+  .shop {
+    gap: 50px;
+  }
+
+  .paragraph {
+    margin: 10px auto;
+  }
+
+  button {
+    align-self: center;
+    margin-left: 45px;
+  }
+
+  .images {
+    flex-direction: column;
+    margin: auto;
+    flex-wrap: wrap;
+  }
+}

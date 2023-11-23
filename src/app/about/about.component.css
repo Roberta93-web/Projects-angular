@@ -78,3 +78,22 @@ button:hover {
   transform: scale(1.1);
   background-color: #31241e;
 }
+
+@media screen and (max-width: 768px) {
+  .container {
+    gap: 150px;
+  }
+
+  .img img {
+    width: 250px;
+    height: 300px;
+    max-width: 600px;
+    object-fit: cover;
+  }
+
+  .cont2 {
+    width: 200px;
+    height: 200px;
+    gap: 10px;
+  }
+}

@@ -97,3 +97,19 @@ button:hover {
   transform: scale(1.1);
   background-color: #31241e;
 }
+
+@media screen and (max-width: 768px) {
+  .contact {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .left {
+    flex: 1;
+  }
+
+  .form {
+    flex: 1;
+  }
+}

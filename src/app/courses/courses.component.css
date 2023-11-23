@@ -70,3 +70,31 @@ button:hover {
   transform: scale(1.1);
   background-color: #31241e;
 }
+
+@media screen and (max-width: 768px) {
+  .cont {
+    margin-bottom: 10px;
+    justify-content: center;
+  }
+
+  .title {
+    padding: 0px 50px 0 50px;
+    margin-top: -50px;
+    display: flex;
+    align-items: center;
+  }
+
+  img {
+    width: 300px;
+    max-width: 500px;
+    height: 100px;
+  }
+
+  .text {
+    font-size: 10px;
+  }
+
+  .btn {
+    justify-content: center;
+  }
+}

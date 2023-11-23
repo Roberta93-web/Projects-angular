@@ -112,3 +112,17 @@ button:hover {
   display: flex;
   align-items: center;
 }
+
+@media screen and (max-width: 768px) {
+  .container-prod {
+    display: flex;
+    flex-direction: column;
+  }
+  .right {
+    display: none;
+  }
+
+  .left {
+    display: none;
+  }
+}
